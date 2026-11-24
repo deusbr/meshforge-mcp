@@ -1,0 +1,48 @@
+{
+  "name": "meshforge-mcp",
+  "version": "0.2.0",
+  "description": "Zero-dependency, zero-API-key open-source Text/Image-to-3D CLI, pure-code SDF/EDT GLB generator, GLB inspector, and MCP server for Codex, Claude Code, Gemini CLI, Claude Desktop, Cursor, and OpenBot.",
+  "main": "lib/providers.cjs",
+  "bin": {
+    "meshforge": "./bin/meshforge.cjs",
+    "meshforge-mcp": "./bin/mcp-server.cjs"
+  },
+  "scripts": {
+    "check": "node --check bin/meshforge.cjs && node --check bin/mcp-server.cjs && node --check lib/glb.cjs && node --check lib/procedural-3d.cjs && node --check lib/image-to-3d.cjs && node --check lib/gradio-client.cjs && node --check lib/providers.cjs && node --check lib/installers.cjs && node --check lib/prober.cjs && node --check tests/meshforge.test.cjs",
+    "test": "node --test tests/meshforge.test.cjs"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "text-to-3d",
+    "image-to-3d",
+    "sdf",
+    "marching-tetrahedra",
+    "distance-transform",
+    "procedural-3d",
+    "glb",
+    "gltf",
+    "threejs",
+    "codex",
+    "claude-code",
+    "gemini-cli",
+    "open-source"
+  ],
+  "author": "Emerson Almeida <https://github.com/deusbr>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deusbr/meshforge-mcp.git"
+  },
+  "homepage": "https://github.com/deusbr/meshforge-mcp#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "skill/",
+    "README.md",
+    "LICENSE"
+  ]
+}
