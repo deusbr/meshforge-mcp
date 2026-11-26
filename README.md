@@ -97,10 +97,6 @@ npm run check
 npm test
 ```
 
-## Resumo em Português (PT-BR)
-
-`meshforge-mcp` é uma ferramenta open-source (MIT, zero dependências, **sem chave de API**) que gera modelos **3D `.glb`** a partir de **texto, imagem ou receita JSON (Scene DSL)** por código puro — usando decodificação PNG nativa (`node:zlib`), segmentação por *flood-fill*, **Transformada de Distância Euclidiana 2D** (*inflação 3D estilo Teddy*), relevo por luminância, primitivas paramétricas (`lathe`, `tube`, `extrude`) e **SDF + Marching Tetrahedra** com materiais PBR — pronta para conectar via **MCP (`stdio`)** ao **Codex**, **Claude Code**, **Gemini CLI**, **Claude Desktop**, **Cursor**, **Antigravity** e **OpenBot**.
-
 ## License
 
 [MIT](LICENSE) — Emerson Almeida (`@deusbr`)
